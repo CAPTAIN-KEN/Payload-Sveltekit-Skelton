@@ -1,4 +1,4 @@
-# Svelte-Kit + PayloadCMS Turborepo
+# Payload CMS - SvelteKit - Skeleton - Turborepo
 
 This is an custom made Turborepo starter.
 
@@ -36,17 +36,5 @@ This Turborepo has some additional tools already setup for you:
 5) pnpm dev // to start the server 
 6) Payload backend URL = http://localhost:3000/admin
 7) Sveltekit / skelton front end URL = http://localhost:5173/
-
-
-pnpm install # install dependencies
-```
-
-### Running the apps
-
-In the project root and run the following command.
-
-```sh
-pnpm dev
-```
 
 This will run both the Svelte-kit and Payload apps in parallel.
