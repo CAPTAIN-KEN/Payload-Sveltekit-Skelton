@@ -32,10 +32,8 @@
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"vite": "^4.3.0",
-		"vitest": "^0.25.3"
-	},
-	"type": "module",
-	"dependencies": {
+		"vitest": "^0.25.3",
 		"@skeletonlabs/skeleton": "^1.2.5"
-	}
+	},
+	"type": "module"
 }
