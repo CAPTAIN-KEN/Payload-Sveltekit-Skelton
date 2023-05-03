@@ -1,0 +1,53 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".svelte-kit/**", ".vercel/**"]
+    },
+    "build:win": {
+      "dependsOn": ["^build:win"],
+      "outputs": [".svelte-kit/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    },
+    "start": {
+      "cache": false
+    },
+    "start:win": {
+      "cache": false
+    },
+    "preview": {
+      "cache": false
+    },
+
+    "web#build": {
+      "env": ["PUBLIC_PAYLOAD_SERVER_URL"]
+    },
+    "server#build": {
+      "env": [
+        "PUBLIC_PORT",
+        "PORT",
+        "PAYLOAD_SECRET",
+        "MONGO_URL",
+        "PAYLOAD_PUBLIC_SERVER_URL"
+      ]
+    },
+
+    "web#build:win": {
+      "env": ["PUBLIC_PAYLOAD_SERVER_URL"]
+    },
+    "server#build:win": {
+      "env": [
+        "PORT",
+        "PAYLOAD_SECRET",
+        "MONGO_URL",
+        "PAYLOAD_PUBLIC_SERVER_URL"
+      ]
+    }
+  }
+}

@@ -1,38 +1,70 @@
-# create-svelte
+# Svelte-Kit + PayloadCMS + tRPC Turborepo
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is an custom made Turborepo starter.
 
-## Creating a project
+## What's inside?
 
-If you're seeing this, you've probably already done this step. Congrats!
+This [Turborepo] includes the following packages/apps:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Apps
 
-# create a new project in my-app
-npm create svelte@latest my-app
+Each app is 100% [TypeScript].
+
+- `web`: a [Svelte-kit] web app with [UnoCSS] for styling
+- `server`: an [Express] app with [PayloadCMS] and [tRPC] setup
+
+### Packages
+
+- `eslint-config-custom`: `eslint` configurations (includes `eslint-plugin-svelte` and `eslint-config-prettier`)
+- `dum`: a scripts runner executable written in [Rust]
+- `replacer`: A CLI for replacing strings in files and directories written in [Rust]
+
+### Utilities
+
+This Turborepo has some additional tools already setup for you:
+
+- [TypeScript] for static type checking
+- [ESLint] for code linting
+- [Prettier] for code formatting
+
+## Getting Started
+
+This project uses [pnpm].
+
+```sh
+npx degit HanielU/turbo-sk-payload-trpc my-project # download the project
+
+cd my-project # navigate into the project
+
+pnpm install # install dependencies
 ```
 
-## Developing
+### Running the apps
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+In the project root and run the following command.
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```sh
+pnpm dev
 ```
 
-## Building
+This will run both the Svelte-kit and Payload apps in parallel.
 
-To create a production version of your app:
+## License
 
-```bash
-npm run build
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-You can preview the production build with `npm run preview`.
+<!-- initialise all the links used -->
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[turborepo]: https://turbo.build/repo
+[eslint]: https://eslint.org
+[express]: https://expressjs.com
+[fastify]: https://www.fastify.io
+[payloadcms]: https://www.payloadcms.com
+[prettier]: https://prettier.io
+[prisma]: https://www.prisma.io
+[svelte-kit]: https://kit.svelte.dev
+[unocss]: https://github.com/unocss/unocss
+[trpc]: https://trpc.io
+[typescript]: https://www.typescriptlang.org
+[rust]: https://www.rust-lang.org
+[pnpm]: https://pnpm.io
