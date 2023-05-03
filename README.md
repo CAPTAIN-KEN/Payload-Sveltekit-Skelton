@@ -10,7 +10,7 @@ This [Turborepo] includes the following packages/apps:
 
 Each app is 100% [TypeScript].
 
-- `web`: a [Svelte-kit] web app with [UnoCSS] for styling
+- `web`: a [Svelte-kit] web app with [Tailwind] for styling
 - `server`: an [Express] app with [PayloadCMS] setup
 
 ### Packages
