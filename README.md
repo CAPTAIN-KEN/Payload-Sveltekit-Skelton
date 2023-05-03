@@ -29,7 +29,14 @@ This Turborepo has some additional tools already setup for you:
 
 ## Getting Started
 
-This project uses [pnpm].
+1) Install pnpm -  brew install pnpm
+2) Clone the repo 
+3) update the .env file with mongo DB connection 
+4) pnpm install // to install dependencies 
+5) pnpm dev // to start the server 
+6) Payload backend URL = http://localhost:3000/admin
+7) Sveltekit / skelton front end URL = http://localhost:5173/
+
 
 pnpm install # install dependencies
 ```
