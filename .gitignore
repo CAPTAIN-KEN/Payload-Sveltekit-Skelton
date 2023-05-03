@@ -36,3 +36,6 @@ package
 .yarn/*
 !.yarn/releases
 !.yarn/plugins
+
+# Ignore env
+.env
