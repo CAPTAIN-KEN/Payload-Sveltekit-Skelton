@@ -31,7 +31,7 @@ This Turborepo has some additional tools already setup for you:
 
 1) Install pnpm -  brew install pnpm
 2) Clone the repo 
-3) update the .env file with mongo DB connection 
+3) update the .env file with (1) mongo DB connection and (2) payload secret
 4) pnpm install // to install dependencies 
 5) pnpm dev // to start the server 
 6) Payload backend URL = http://localhost:3000/admin
